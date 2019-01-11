@@ -6,8 +6,6 @@ Plug 'jacoborus/tender.vim'
 Plug 'crusoexia/vim-monokai'
 " Powerline
 Plug 'powerline/powerline'
-" NERDTree
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 " fzf
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
@@ -27,11 +25,15 @@ colorscheme monokai
 set nu
 set cursorline
 set showmatch
+set hls
+
 set shiftwidth=2
 set tabstop=2
 set softtabstop=2
-set hls
-" set expandtab
+
+" Enable expandtab for spaces or noexpandtab for tabs
+set expandtab
+" set noexpandtab
 
 "Exit insert mode with jk
 imap jk <esc>
@@ -47,9 +49,11 @@ nnoremap <Leader>C ?\u<CR>
 nnoremap <Leader>M :bp<CR>
 nnoremap <Leader>m :bn<CR>
 
+" netrw
+nnoremap <Leader>d :Explore<CR>
+nnoremap <Leader>D :Sexplore<CR>
+
 " PLUGINS
-" NERDTree
-nnoremap <Leader>d :NERDTree<CR>
 " fzf
 nnoremap <Leader>f :Files<CR>
 nnoremap <Leader>g :GFiles<CR>
