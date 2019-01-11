@@ -4,8 +4,6 @@ call plug#begin('~/.vim/plugged/')
 " Colorschemes
 Plug 'jacoborus/tender.vim'
 Plug 'crusoexia/vim-monokai'
-" Powerline
-Plug 'powerline/powerline'
 " fzf
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
@@ -20,14 +18,14 @@ Plug 'w0rp/ale'
 call plug#end()
 
 syntax enable
-colorscheme monokai
+colorscheme tender
 
 set nu
 set cursorline
 set showmatch
 set hls
 
-set shiftwidth=2
+set shiftwidth=4
 set tabstop=2
 set softtabstop=2
 
