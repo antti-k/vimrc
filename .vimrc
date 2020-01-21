@@ -10,8 +10,8 @@ Plug 'junegunn/fzf.vim'
 " ack
 Plug 'mileszs/ack.vim'
 " JavaScript and JSX highlighting
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
+Plug 'yuezk/vim-js'
+Plug 'maxmellon/vim-jsx-pretty'
 " Asynchronous Lint Engine
 Plug 'w0rp/ale'
 
@@ -24,8 +24,9 @@ set nu
 set cursorline
 set showmatch
 set hls
+set backspace=2
 
-set shiftwidth=4
+set shiftwidth=2
 set tabstop=2
 set softtabstop=2
 
